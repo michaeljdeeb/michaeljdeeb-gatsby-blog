@@ -1,0 +1,137 @@
+nav {
+  background: $brand-dark;
+  background: linear-gradient(to right, $brand-dark, $brand-light);
+  -webkit-font-smoothing: subpixel-antialiased;
+  height: $nav-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  a {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1em;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: $brand-dark;
+      text-decoration: none;
+    }
+  }
+
+  button.mobile-dropdown {
+    display: none;
+  }
+
+  div.wrapper {
+    max-width: $desktop-breakpoint;
+    margin: 0 auto;
+  }
+
+  div.brand {
+    a {
+      font-size: 1.25em;
+      padding: 1.3em 1em .7em;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        text-transform: capitalize;
+        padding: 1.875em 1.25em .875em;
+      }
+
+      &.active a {
+        background-color: #fff;
+        color: $brand-dark;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  nav {
+    height: $mobile-nav-height;
+
+    a {
+      float: none;
+    }
+
+    div.brand {
+      background: linear-gradient(to right, $brand-dark, $brand-light);
+      float: none;
+      position: relative;
+      z-index: 1;
+
+      a {
+        padding: .6em .8em;
+      }
+    }
+
+    button {
+      &.mobile-dropdown {
+        background: none;
+        border: none;
+        color: #fff;
+        display: block;
+        padding: 0;
+        position: absolute;
+        right: 1em;
+        // top: .375em;
+        top: 0;
+        transition: all .4s ease-in-out;
+        z-index: 1;
+      }
+
+      &.js-ease-arrow {
+        transform: scaleY(-1);
+      }
+
+      svg {
+        width: $mobile-nav-height;
+        height: $mobile-nav-height;
+        fill: #fff;
+      }
+    }
+
+    ul {
+      transform: translateY(-16.75em);
+      z-index: -1;
+
+      li {
+        background: $brand-dark;
+        background: linear-gradient(to right, $brand-dark, $brand-light);
+        display: list-item;
+        transition: transform .4s ease-in-out;
+
+        a {
+          float: none;
+          padding: .875em 1em;
+          text-align: left;
+          width: 100%;
+        }
+
+        &.js-divider {
+          border-top: $one-px solid #fff;
+        }
+
+        &.js-nav-visible {
+          transform: translateY(16.75em);
+        }
+      }
+    }
+  }
+}

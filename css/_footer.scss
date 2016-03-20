@@ -1,0 +1,12 @@
+footer {
+  border-top: $one-px solid #e8e8e8;
+  margin-top: 2em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  footer {
+    margin-top: 0;
+  }
+}

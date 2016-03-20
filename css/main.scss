@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../assets/fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../assets/fonts/SourceSansPro-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SourceSansPro@2x";
+  src: url(../assets/fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+  font-family: "SourceSansPro@2x";
+  src: url(../assets/fonts/SourceSansPro-Regular.ttf);
+  font-weight: bold;
+}
+
+// $base-font-family: "SFUIDisplay", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $retina-font-family: "SFUIDisplay@2x", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-font-family: 'SourceSansPro', sans-serif;
+$retina-font-family: 'SourceSansPro@2x', sans-serif;
+
+$brand-light: #2ac9fa;
+$brand-dark: #09f;
+
+$mobile-breakpoint: 48em;
+$desktop-breakpoint: 62em;
+
+$nav-height: 3.75em;
+$mobile-nav-height: 2.75em;
+
+$one-px: .0625em;
+
+@import '_normalize';
+
+body {
+  font-family: $base-font-family;
+  font-size: 1em;
+  font-weight: 100;
+  -webkit-text-size-adjust: 100%
+}
+
+// body, body * {
+//     max-height: 1000000px;
+// }
+
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+  body {
+    font-family: $retina-font-family;
+  }
+}
+
+// #react-mount > div > div {
+//   margin: $nav-height+1em auto 0;
+//   max-width: $desktop-breakpoint;
+// }
+
+.bio-container {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.welcome {
+  float: left;
+}
+
+.statement {
+  font-size: 4em;
+  line-height: 1em;
+  margin: .3125em;
+  float: left;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+img.avatar {
+  // position: absolute;
+  border-radius: 50%;
+  width: 6.5em;
+  height: auto;
+  float: left;
+  // clip-path: circle(60px at 0 0);
+}
+
+.welcome-detail {
+  float: left;
+  margin-left: 1em;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.meta {
+  color: #aaa;
+  margin-bottom: 1em;
+}
+
+.recent-posts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+@import 'nav';
+@import 'contact';
+@import 'footer';

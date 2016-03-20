@@ -1,0 +1,11 @@
+blogTitle = "michaeljdeeb.com"
+siteTitle = "Michael J. Deeb"
+authorName = "Michael Deeb"
+linkPrefix = ""
+
+[navigation]
+home = "/"
+blog = "/blog/"
+# experiences = "/experiences/"
+# resume = "/resume/"
+contact = "/contact/"
