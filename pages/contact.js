@@ -15,7 +15,6 @@ class Contact extends React.Component {
     return (
       <DocumentTitle title={`Contact | ${config.siteTitle}`}>
         <div>
-          <Navigation />
           <PageHeading headingText="Let's Talk" metaText="Message | Socalize | Mail" />
 
           <h3>Fastest</h3>
@@ -47,26 +46,14 @@ class Contact extends React.Component {
 
           <h3>Fast</h3>
           <form className="contact-form">
-            <div className="row">
-              <div className="input-icon">N</div>
-              <input placeholder="Name" />
-            </div>
-            <div className="row">
-              <div className="input-icon">N</div>
-              <input placeholder="Email" />
-            </div>
-            <div className="row">
-              <div className="input-icon">N</div>
-              <input placeholder="Subject" />
-            </div>
-            <div className="row">
-              <div className="textarea-icon">N</div>
-              <textarea rows="5" placeholder="Message"></textarea>
-            </div>
+            <input placeholder="Name" />
+            <input placeholder="Email" />
+            <input placeholder="Subject" />
+            <textarea rows="5" placeholder="Message"></textarea>
             <button type="submit"><span>Submit</span></button>
           </form>
 
-          <svg>
+          <svg width="0" height="0">
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" style={{ stopColor: '#09f', stopOpacity: 1 }} />
               <stop offset="100%" style={{ stopColor: '#2ac9fa', stopOpacity: 1 }} />

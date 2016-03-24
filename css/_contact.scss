@@ -26,34 +26,15 @@
   }
 }
 
-@keyframes AnimationName {
+@keyframes SpeedyGradient {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
 
 .contact-form {
-  // margin: 1em;
-  // max-width: 31.25em;
-  // width: 100%;
-
-  .input-icon {
-    display: none;
-    float: left;
-    border: $one-px solid $brand-dark;
-    background-color: $brand-dark;
-    height: 100%;
-    padding: .375em .75em;
-    line-height: 1.42857143;
-    margin: 0;
-  }
-
-  .textarea-icon {
-    display: none;
-    @extend .input-icon;
-    line-height: 5 + 1.42857143;
-    border: 0;
-  }
+  max-width: 31.25em;
+  width: 100%;
 
   button {
     background-color: #fff;
@@ -61,19 +42,22 @@
     border-image: linear-gradient(to right, $brand-dark, $brand-light);
     border-image-slice: 1;
     color: $brand-light;
-    font-size: 1.3em;
     padding: .375em .75em;
 
     span {
       background: -webkit-linear-gradient(left, $brand-dark, $brand-light);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: 100;
+      -webkit-user-select: none;
+      user-select: none;
     }
 
     &:hover {
+      animation: SpeedyGradient 3s ease infinite;
       background: linear-gradient(to right, $brand-dark, $brand-light);
-      animation: AnimationName 30s ease infinite;
+      background-size: 400% 400%;
+      border: 0;
+      padding: .375em + $one-px .75em + $one-px;
 
       span {
         color: #fff;
@@ -86,10 +70,10 @@
     border: $one-px solid transparent;
     border-image: linear-gradient(to right, $brand-dark, $brand-light);
     border-image-slice: 1;
+    box-sizing: border-box;
     line-height: 1.42857143;
-    margin: 0 1em 1em 0;
+    margin-bottom: 1em;
     padding: .375em .75em;
-    max-width: 27em;
     width: 100%;
   }
 
@@ -97,9 +81,9 @@
     border: $one-px solid transparent;
     border-image: linear-gradient(to right, $brand-dark, $brand-light);
     border-image-slice: 1;
+    box-sizing: border-box;
     margin-bottom: 1em;
     padding: .375em .75em;
-    max-width: 27em;
     width: 100%;
   }
 }
@@ -111,10 +95,12 @@
       float: none;
       margin: 1em auto;
       width: 100%;
-
-      svg {
-        fill: url(#grad1);
-      }
     }
+  }
+
+  .contact-form {
+    width: auto;
+    // margin: 0 1em;
+    max-width: none;
   }
 }
