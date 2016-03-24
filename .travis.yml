@@ -1,5 +1,6 @@
 # back to language cpp to try to bypass osx node failure
 language: node_js
+sudo: required
 
 env:
   - export NODE_VERSION="5"
@@ -9,10 +10,10 @@ after_success: |
     cd "$TRAVIS_BUILD_DIR"
 
     # Possibly duplicating this step
-    npm cache clean -f
-    npm install -g n
-    n stable
-    npm update -g
+    sudo npm cache clean -f
+    sudo npm install -g n
+    sudo n stable
+    sudo npm update -g
     npm install -g gatsby
     npm install
 
