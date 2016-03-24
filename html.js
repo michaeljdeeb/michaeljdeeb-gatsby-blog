@@ -1,6 +1,7 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { link } from 'gatsby-helpers'
+import { prune, include as include } from 'underscore.string'
 
 export default class Html extends React.Component {
   render () {
@@ -15,8 +16,6 @@ export default class Html extends React.Component {
       cssLink = <link rel="stylesheet" href={link('/styles.css')} />
     }
 
-    let viewSource = 'Hey! If you want to see more about this site, check out: URL'
-    viewSource = 'console.info(\'' + viewSource + '\')'
     return (
       <html lang="en">
         <head>
@@ -26,15 +25,15 @@ export default class Html extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1"
           />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <title>{this.props.title}</title>
-          <link rel="shortcut icon" href={favicon} />
+          <link rel="shortcut icon" href="/favicon.ico" />
 
           {cssLink}
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
           <script src={link('/bundle.js')} />
-          <script dangerouslySetInnerHTML={{ __html: viewSource }}></script>
         </body>
       </html>
     )
