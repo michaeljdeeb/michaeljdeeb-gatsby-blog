@@ -1,6 +1,9 @@
 # back to language cpp to try to bypass osx node failure
 language: node_js
 
+env:
+  - export NODE_VERSION="5"
+
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
     cd "$TRAVIS_BUILD_DIR"
