@@ -22,12 +22,11 @@ I settled on two types of validation. The first one occurs when a form element l
 
 The second validation occurs when the user presses submit and if everything looks good it will create a another form that is hidden and contains the Simple Form action and submit it. If there are errors (red fields), nothing will happen and it's up to the user to fix them. If the message is short (yellow field) the form will display an alert to the user that their message looks a little short, but if submit is pressed a second time the form will go through.
 
-###HTML###
+### HTML
 
 This form requires [Bootstrap](http://getbootstrap.com) and [Font Awesome](http://fortawesome.github.io/Font-Awesome/) to display correctly.
 
-{% highlight html linenos %}
-
+``` html
     <form class="form-horizontal" action="javascript:validateForm()" method="post">
         <div id="name-group" class="form-group">
             <div class="col-xs-10 col-xs-offset-1 input-group">
@@ -65,15 +64,13 @@ This form requires [Bootstrap](http://getbootstrap.com) and [Font Awesome](http:
             </div>
         </div>
     </form>
+```
 
-{% endhighlight %}
-
-###JS###
+### JS
 
 As a note, `document.getElementById("").classList` doesn't work in IE prior to version 10.
 
-{% highlight javascript linenos %}
-
+``` js
     function validateInline(id, input) {
         if(id == "name" || id == "subject" || id == "message")
             if(input.trim().length > 0) {
@@ -135,10 +132,9 @@ As a note, `document.getElementById("").classList` doesn't work in IE prior to v
             document.getElementById("simpleForm").submit();
         }
     }
+```
 
-{% endhighlight %}
-
-####Criticisms####
+#### Criticisms
 If I were to iterate on this implementation I'd probably write more advanced validation checks in JavaScript and use jQuery for the real form submission. I'd also write in a workaround for the IE compatibility issue.
 
-If you'd like to see it in action you can check it out on my [contact page](../../contact.html) and if you have any suggestions on how to make it better or any other comments feel free to press that submit button!
+If you'd like to see it in action you can check it out on my [contact page](/contact/) and if you have any suggestions on how to make it better or any other comments feel free to press that submit button!

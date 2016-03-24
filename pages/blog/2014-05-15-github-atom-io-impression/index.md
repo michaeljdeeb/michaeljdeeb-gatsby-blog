@@ -16,16 +16,16 @@ This week's post is on [Atom [Editor]](https://atom.io). I thought it would be a
 
 I spend a large majority of my day in [Spring Tool Suite](http://spring.io/tools) so I don't feel like I'm able to leverage Atom as well as I would like to, but it's been my go to for working on [this site](https://github.com/michaeljdeeb/michaeljdeeb.github.io), my [daily-programmer project](https://github.com/michaeljdeeb/daily-programmer), as well as at a Faux Game Jam I participated in with my friends two months ago.
 
-###Benefits###
+### Benefits
 - Git integration color codes files in the tree view and the number of changed lines in the status bar at the bottom.
 - The editor is so modular that it can be built to be exactly what you need if you have the time to do so (The defaults are also pretty great, I've only changed a couple settings).
 
-###What's Missing###
+### What's Missing
 - I need to find an xmllint package as that's the one thing I do use a text editor for regularly and I'd prefer to only have to keep one text editor in my dock. [[Coming Soon]](https://atom.io/packages/linter)
 - Stability, particularly around editing single text files as it will sometimes try to make a directory like `~/Desktop` into a project folder and try to remember what files you had open and how the window was configured last time you had that "project" open.
 - Cross compatibility. Although this isn't an issue for me, Atom is currently only for OS X. However, the [open source](http://blog.atom.io/2014/05/06/atom-is-now-open-source.html) page mentions Linux and Windows coming in time.
 
-###Quick Tips###
+### Quick Tips
 - `cmd-shift-p` - Toggle Command Pallet
     - Every command can be found by using this text field.
 - `cmd-p` - Open files

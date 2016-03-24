@@ -43,4 +43,4 @@ However, not everybody has time time to sit down and start in on something new. 
 
 <s>If you have any tools that have helped you succeed as a programmer, please tell me about them in the comments.</s> I'm always looking for new ways to learn.
 
-01000111011011110110111101100100001000000110110001110101011000110110101100100001
+<p style="word-break: break-all;">01000111011011110110111101100100001000000110110001110101011000110110101100100001</p>
