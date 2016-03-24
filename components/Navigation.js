@@ -6,7 +6,6 @@ class Navigation extends React.Component {
   showMenu () {
     const navItems = document.querySelectorAll('nav ul li')
     const navArrow = document.querySelector('.mobile-dropdown')
-    console.dir(navArrow)
     navArrow.classList.toggle('js-ease-arrow')
 
     for (let i=0; i<navItems.length; i++) {

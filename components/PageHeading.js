@@ -4,7 +4,7 @@ class PageHeading extends React.Component {
   render () {
     return (
       <header>
-        <h1 className="no-margin-heading">{this.props.headingText}</h1>
+        <h1 className="no-margin-padding">{this.props.headingText}</h1>
         <p className="meta">{this.props.metaText}</p>
         <hr />
       </header>

@@ -1,0 +1,78 @@
+.bio-container {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@keyframes WelcomeAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+
+.welcome {
+  // float: left;
+  animation: WelcomeAnimation 1.5s ease-out 1;
+  // transition: all .5s ease-out;
+  // transition-delay: 5s;
+  position: absolute;
+  top: calc(50% - 3.25em);
+}
+
+.statement {
+  font-size: 4em;
+  line-height: 1em;
+  margin: .3125em;
+  float: left;
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+img.avatar {
+  // position: absolute;
+  border-radius: 50%;
+  width: 6.5em;
+  height: auto;
+  float: left;
+  // clip-path: circle(60px at 0 0);
+}
+
+.welcome-detail {
+  // float: left;
+  // margin-bottom: -1em;
+  margin-left: 14em;
+  max-width: 47em;
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  .welcome {
+    width: 13.75em;
+    // float: none;
+    margin: 1em auto 2em;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .welcome-detail {
+    margin-left: 0;
+  }
+}
