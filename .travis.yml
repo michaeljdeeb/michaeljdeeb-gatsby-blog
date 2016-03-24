@@ -9,6 +9,10 @@ after_success: |
     cd "$TRAVIS_BUILD_DIR"
 
     # Possibly duplicating this step
+    npm cache clean -f
+    npm install -g n
+    n stable
+    npm update -g
     npm install -g gatsby
     npm install
 
