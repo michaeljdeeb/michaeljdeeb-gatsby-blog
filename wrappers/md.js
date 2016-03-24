@@ -17,7 +17,10 @@ class MarkdownWrapper extends React.Component {
     return (
       <DocumentTitle title={`${post.title} | ${config.siteTitle}`}>
         <div className="markdown">
-          <PageHeading headingText={post.title} metaText={moment(post.date).format('dddd | MMMM DD YYYY | hh:mm A')} />
+          <PageHeading
+            headingText={post.title}
+            metaText={moment(post.date).format('dddd | MMMM DD YYYY | hh:mm A')}
+          />
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
 
           <ReadNext post={post} pages={route.pages} />

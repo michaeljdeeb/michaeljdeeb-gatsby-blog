@@ -10,14 +10,17 @@ import '../css/main.scss'
 class Template extends React.Component {
   render () {
     const { location, children } = this.props
+    console.info('Welcome to the Developer Tools!')
+    console.info('This site\'s source lives here: https://github.com/michaeljdeeb/michaeljdeeb-gatsby-blog')
+
 
     return (
       <div>
         <Navigation />
         <div className="page">
           {children}
+          <Footer />
         </div>
-        <Footer />
       </div>
     )
   }

@@ -12,11 +12,13 @@ import Navigation from 'components/Navigation'
 import PageHeading from 'components/PageHeading'
 import Footer from 'components/Footer'
 
+import '../../css/zenburn.css'
+
 class BlogPosts extends React.Component {
   render () {
     const pageLinks = []
-    console.dir(this.props.route)
     // Sort pages.
+    const pages = this.props.route.pages
     const sortedPages = sortBy(this.props.route.pages, (page) =>
       access(page, 'data.date')
     ).reverse()
@@ -32,13 +34,14 @@ class BlogPosts extends React.Component {
             <h3 className="no-margin-padding"><Link to={link(page.path)}>{title}</Link></h3>
             <p className="meta">{moment(date).format('dddd | MMMM DD YYYY | hh:mm A')}</p>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            <hr />
           </li>
         )
       }
     })
     return (
       <DocumentTitle title={`Blog | ${config.siteTitle}`}>
-        <div>
+        <div className="markdown">
           <PageHeading headingText="Blog" metaText="Learn | Document | Teach" />
 
           <ul className="recent-posts">

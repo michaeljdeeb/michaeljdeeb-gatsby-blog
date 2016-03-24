@@ -15,7 +15,6 @@ import Footer from 'components/Footer'
 class BlogIndex extends React.Component {
   render () {
     const pageLinks = []
-    console.dir(this.props.route)
     // Sort pages.
     const sortedPages = sortBy(this.props.route.pages, (page) =>
       access(page, 'data.date')
