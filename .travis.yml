@@ -37,3 +37,24 @@ addons:
 script:
   - npm install
   - npm run lint
+
+after_success: |
+  if [ -n "$GITHUB_API_KEY" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+
+    # Possibly duplicating this step
+    npm install -g gatsby
+    npm install
+
+    # Build site to /public/
+    gatsby build
+    cd public
+
+    git init
+    git remote add origin https://github.com/michaeljdeeb/michaeljdeeb.github.git
+    git add .
+    git -c user.name='travis' -c user.email='travis' commit -m init
+    # Make sure to make the output quiet, or else the API token will leak!
+    git push -f -q https://michaeljdeeb:$GITHUB_API_KEY@github.com/michaeljdeeb/michaeljdeeb.github
+    cd "$TRAVIS_BUILD_DIR"
+  fi
