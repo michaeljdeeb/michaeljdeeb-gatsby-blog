@@ -10,10 +10,11 @@ export default class Html extends React.Component {
     if (this.props.title) {
       title = this.props.title
     }
-
+    let analytics = ''
     let cssLink
     if (process.env.NODE_ENV === 'production') {
       cssLink = <link rel="stylesheet" href={link('/styles.css')} />
+      analytics = '!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-49663508-2","auto"),ga("send","pageview");'
     }
 
     return (
@@ -28,7 +29,7 @@ export default class Html extends React.Component {
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <title>{this.props.title}</title>
           <link rel="shortcut icon" href="/favicon.ico" />
-
+          <script dangerouslySetInnerHTML={{ __html: analytics }} />
           {cssLink}
         </head>
         <body className="landing-page">
