@@ -43,6 +43,9 @@ after_success: |
     gatsby build
     cd public
 
+    # Remove this when you figure out file-loader
+    echo "michaeljdeeb.com" > CNAME
+
     git init
     git remote add origin https://github.com/michaeljdeeb/michaeljdeeb.github.io.git
     git add .

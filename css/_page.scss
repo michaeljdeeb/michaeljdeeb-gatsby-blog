@@ -59,7 +59,7 @@ svg.one-em {
 @media screen and (max-width: $desktop-breakpoint) {
   .page {
     max-width: $mobile-breakpoint;
-    margin: $nav-height+1em 1em 1em;
+    margin: $nav-height+1em auto 1em;
   }
 }
 
