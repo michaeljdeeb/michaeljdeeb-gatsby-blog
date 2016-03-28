@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render () {
     return (
       <footer>
-        <p><a href="#">Back to top</a></p>
+        <p><a href="#">Back to top <Icon icon="angledown" className="one-em text" /></a></p>
         <div>
           <a href="#">Work Setup</a> | <a href="#">New Mac Setup</a> | <a href="#">Site Stack</a>
         </div>

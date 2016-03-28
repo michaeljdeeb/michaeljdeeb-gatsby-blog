@@ -13,7 +13,7 @@ class Icon extends React.Component {
     }
 
     return (
-      <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+      <svg className={this.props.className} width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
         <path d={iconSet[this.props.icon]} />
       </svg>
     )
@@ -22,6 +22,7 @@ class Icon extends React.Component {
 
 Icon.propTypes = {
   icon: React.PropTypes.string.isRequired,
+  className: React.PropTypes.string,
 }
 
 export default Icon
