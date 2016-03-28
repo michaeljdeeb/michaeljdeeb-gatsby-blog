@@ -1,6 +1,9 @@
 blogTitle = "michaeljdeeb.com"
 siteTitle = "Michael J. Deeb"
+siteURL = "http://michaeljdeeb.com"
+siteDescription = "Michael Deeb is a web developer building things in San Francisco, CA. This is his personal website."
 authorName = "Michael Deeb"
+twitterHandle = "@michaeljdeeb"
 linkPrefix = ""
 
 [navigation]

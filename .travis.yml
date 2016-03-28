@@ -44,9 +44,9 @@ after_success: |
     cd public
 
     git init
-    git remote add origin https://github.com/michaeljdeeb/michaeljdeeb.github.git
+    git remote add origin https://github.com/michaeljdeeb/michaeljdeeb.github.io.git
     git add .
-    git -c user.name='travis' -c user.email='travis' commit -m init
+    git -c user.name='travis' -c user.email='travis' commit -m "Build By Travis"
     # Make sure to make the output quiet, or else the API token will leak!
-    git push -f -q https://michaeljdeeb:$GITHUB_API_KEY@github.com/michaeljdeeb/michaeljdeeb.github master
+    git push -f -q https://michaeljdeeb:$GITHUB_API_KEY@github.com/michaeljdeeb/michaeljdeeb.github.io master
   fi
