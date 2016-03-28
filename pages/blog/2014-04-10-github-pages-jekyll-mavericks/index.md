@@ -8,7 +8,7 @@ tags: [GitHub Pages, Jekyll, Mavericks, Ruby]
 description: "My tutorial on how to get up and running with GitHub Pages and Jekyll under OS X Mavericks."
 image: "github-pages-jekyll-mavericks.png"
 readPrevious: "/blog/a-new-beginning"
-path: "/blog/github-pages-jekyll-mavericks"
+path: "/blog/github-pages-jekyll-mavericks/"
 readNext: "/blog/using-a-custom-domain-with-github-pages"
 ---
 

@@ -8,7 +8,7 @@ tags: [GitHub Pages, A, CNAME, DNS, Domain, Domain Name, Forwarding, Hover]
 description: "How to use a custom domain name with a GitHub Pages site."
 image: "using-a-custom-domain-with-github-pages.png"
 readPrevious: "/blog/github-pages-jekyll-mavericks"
-path: "/blog/using-a-custom-domain-with-github-pages"
+path: "/blog/using-a-custom-domain-with-github-pages/"
 readNext: "/blog/excluding-self-from-google-analytics"
 ---
 

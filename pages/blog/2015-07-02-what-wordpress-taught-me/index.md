@@ -8,7 +8,7 @@ tags: [Jekyll, WordPress, WordPress Codex, Planning]
 description: "It's funny how we always end up coming full circle, even in technology."
 image: "what-wordpress-taught-me.png"
 readPrevious: "/blog/post-read-times-and-jekyll"
-path: "/blog/what-wordpress-taught-me"
+path: "/blog/what-wordpress-taught-me/"
 readNext: "/blog/beats-1-week-1"
 ---
 

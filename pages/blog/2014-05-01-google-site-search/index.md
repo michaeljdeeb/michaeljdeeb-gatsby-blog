@@ -8,7 +8,7 @@ tags: [Jekyll, Search, PHP, Google]
 description: "Search is important, but how do you accomplish it without any server-side scripting?"
 image: "google-site-search.png"
 readPrevious: "/blog/excluding-self-from-google-analytics"
-path: "/blog/google-site-search"
+path: "/blog/google-site-search/"
 readNext: "/blog/form-validation-and-email"
 ---
 

@@ -8,7 +8,7 @@ tags: [Apple Music, Beats 1, Radio, Playlist]
 description: "I listened to Beats 1 as often as I could the first week and ended up with a large amount of new music."
 image: "beats-1-week-1.png"
 readPrevious: "/blog/what-wordpress-taught-me"
-path: "/blog/beats-1-week-1"
+path: "/blog/beats-1-week-1/"
 ---
 
 Apple Music has now been available for one week and Beats 1 has 168 hours of content under its belt. Apple Music definitely isn't perfect, but it's solving my problem of having to switch between various music applications to play certain songs. Beats 1 is also proving to be very helpful because it gives me something to listen to when I'm sick of all my music.

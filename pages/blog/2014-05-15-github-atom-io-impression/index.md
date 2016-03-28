@@ -8,7 +8,7 @@ tags: [Atom, Atom Editor, Atom.io, GitHub, Review, xmllint]
 description: "GitHub released a text editor at the end of February and I received an invite to try it at the beginning of March. This is my review."
 image: "github-atom-io-impression.png"
 readPrevious: "/blog/form-validation-and-email"
-path: "/blog/github-atom-io-impression"
+path: "/blog/github-atom-io-impression/"
 readNext: "/blog/post-read-times-and-jekyll"
 ---
 

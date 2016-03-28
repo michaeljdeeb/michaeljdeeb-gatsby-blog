@@ -8,7 +8,7 @@ tags: [Google, Google Analytics, JavaScript]
 description: "Website analytics are exciting until you realize you're most of your site's visitors."
 image: "excluding-self-from-google-analytics.png"
 readPrevious: "/blog/using-a-custom-domain-with-github-pages"
-path: "/blog/excluding-self-from-google-analytics"
+path: "/blog/excluding-self-from-google-analytics/"
 readNext: "/blog/google-site-search"
 ---
 

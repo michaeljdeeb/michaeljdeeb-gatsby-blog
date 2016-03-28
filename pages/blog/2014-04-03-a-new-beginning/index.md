@@ -8,7 +8,7 @@ tags: [Personal, GitHub, GitHub Pages, Jekyll, WordPress]
 description: "A personal post about Michael J. Deeb's migration from WordPress to Jekyll."
 image: "a-new-beginning.png"
 readPrevious: "/blog/migrated-programming-challenge-change-calculator"
-path: "/blog/a-new-beginning"
+path: "/blog/a-new-beginning/"
 readNext: "/blog/github-pages-jekyll-mavericks"
 ---
 

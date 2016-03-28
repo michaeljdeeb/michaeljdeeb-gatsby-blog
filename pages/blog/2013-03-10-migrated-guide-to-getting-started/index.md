@@ -7,7 +7,7 @@ category: [Programming]
 tags: [Career, Careers, Code, Computer Science, CS, Develop, Education, GitHub, Help, Java, Programming, Reddit, Resume]
 description: "A great reference guide for new programmers looking to branch out from the classroom."
 image: "migrated-guide-to-getting-started.png"
-path: "/blog/migrated-guide-to-getting-started"
+path: "/blog/migrated-guide-to-getting-started/"
 readNext: "/blog/migrated-programming-challenge-change-calculator"
 ---
 *As a note, this is a post that was migrated from the few entries on my WordPress blog.*

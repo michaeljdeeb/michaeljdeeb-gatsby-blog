@@ -8,7 +8,7 @@ tags: [Form, Validation, Jekyll, Bootstrap, Simple Form, JavaScript]
 description: "With this iteration of my website I opted to avoid email, but then I changed my mind."
 image: "form-validation-and-email.png"
 readPrevious: "/blog/google-site-search"
-path: "/blog/form-validation-and-email"
+path: "/blog/form-validation-and-email/"
 readNext: "/blog/github-atom-io-impression"
 ---
 

@@ -8,7 +8,7 @@ tags: [Gist, GitHub, Mac, Objective-C, ObjectiveC, Programming, r/dailyprogramme
 description: "A migrated blog post about a change calculator that takes in values in USD in objective-c."
 image: "migrated-programming-challenge-change-calculator.png"
 readPrevious: "/blog/migrated-guide-to-getting-started"
-path: "/blog/migrated-programming-challenge-change-calculator"
+path: "/blog/migrated-programming-challenge-change-calculator/"
 readNext: "/blog/a-new-beginning"
 ---
 *As a note, this is a post that was migrated from the few entries on my WordPress blog.*

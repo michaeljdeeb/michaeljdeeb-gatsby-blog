@@ -8,7 +8,7 @@ tags: [Jekyll, Plug-in, GitHub Pages, JavaScript, Reading Times]
 description: "Jekyll has been good to me, but I've fallen in Love with Medium's \"x min read\" metric and wanted it for my own site."
 image: "post-read-times-and-jekyll.png"
 readPrevious: "/blog/github-atom-io-impression"
-path: "/blog/post-read-times-and-jekyll"
+path: "/blog/post-read-times-and-jekyll/"
 readNext: "/blog/what-wordpress-taught-me"
 ---
 
