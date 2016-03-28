@@ -1,4 +1,7 @@
 .page {
+  margin: $nav-height+1em auto 1em;
+  max-width: $desktop-breakpoint;
+
   .no-margin-padding {
     margin: 0;
     padding: 0;
@@ -33,5 +36,35 @@
         list-style-type: circle;
       }
     }
+  }
+}
+
+a {
+  svg.text {
+    fill: $brand-dark;
+    vertical-align: middle;
+  }
+  &:visited {
+    svg.text {
+      fill: $brand-light;
+    }
+  }
+}
+
+svg.one-em {
+  height: auto;
+  width: 1em;
+}
+
+@media screen and (max-width: $desktop-breakpoint) {
+  .page {
+    max-width: $mobile-breakpoint;
+    margin: $nav-height+1em 1em 1em;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  .page {
+    margin-top: $mobile-nav-height+1em;
   }
 }

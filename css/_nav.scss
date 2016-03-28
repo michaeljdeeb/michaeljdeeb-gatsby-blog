@@ -41,6 +41,7 @@ nav {
     a {
       font-size: 1.25em;
       padding: 1.3em 1em .7em;
+      margin-left: -1.3em;
     }
   }
 
@@ -62,6 +63,16 @@ nav {
   }
 }
 
+@media screen and (max-width: $desktop-breakpoint) {
+  nav {
+    div.brand {
+      a {
+        margin-left: -.3em;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $mobile-breakpoint - $one-px) {
   nav {
     height: $mobile-nav-height;
@@ -78,6 +89,7 @@ nav {
 
       a {
         padding: .6em .8em;
+        margin-left: .2em;
       }
     }
 

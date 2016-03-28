@@ -295,21 +295,3 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-.page {
-  margin: $nav-height+1em auto 0;
-  max-width: $desktop-breakpoint;
-}
-
-@media screen and (max-width: $desktop-breakpoint) {
-  .page {
-    max-width: $mobile-breakpoint;
-    margin: $nav-height+1em 1em 1em;
-  }
-}
-
-@media screen and (max-width: $mobile-breakpoint - $one-px) {
-  .page {
-    margin-top: $mobile-nav-height+1em;
-  }
-}
