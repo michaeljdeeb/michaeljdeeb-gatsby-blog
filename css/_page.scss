@@ -65,6 +65,6 @@ svg.one-em {
 
 @media screen and (max-width: $mobile-breakpoint - $one-px) {
   .page {
-    margin: $nav-height+1em 1em 1em;
+    margin: $mobile-nav-height+1em 1em 1em;
   }
 }
